@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lombok学习笔记.md",
+                "file": "MyBatis-Plus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lombok学习笔记"
+              "title": "MyBatis-Plus"
             }
           }
         ],
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lombok学习笔记.md",
+                "file": "MyBatis-Plus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Lombok学习笔记 的反向链接列表"
+              "title": "MyBatis-Plus 的反向链接列表"
             }
           },
           {
@@ -138,12 +138,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lombok学习笔记.md",
+                "file": "MyBatis-Plus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Lombok学习笔记 的出链列表"
+              "title": "MyBatis-Plus 的出链列表"
             }
           },
           {
@@ -181,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lombok学习笔记.md",
+                "file": "MyBatis-Plus.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lombok学习笔记 的大纲"
+              "title": "MyBatis-Plus 的大纲"
             }
           }
         ]
@@ -210,8 +210,8 @@
   },
   "active": "361f7da722e553d7",
   "lastOpenFiles": [
-    "未命名.md",
     "Lombok学习笔记.md",
-    "欢迎.md"
+    "欢迎.md",
+    "MyBatis-Plus.md"
   ]
 }
