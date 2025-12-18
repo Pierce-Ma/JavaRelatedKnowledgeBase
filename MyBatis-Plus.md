@@ -1,3 +1,5 @@
+
+# 快速入门
 现有一张 User 表，其表结构如下：
 
 | id  | name   | age | email                                           |
@@ -52,6 +54,7 @@ spring:
       data-locations: classpath:db/data-h2.sql
 在 Spring Boot 启动类中添加 `@MapperScan` 注解，扫描 Mapper 文件夹：
 @SpringBootApplication
+//注意，这里的包不是的地址不是随便写的，**它扫描的是Mapper 接口的包路径**
 @MapperScan("com.baomidou.mybatisplus.samples.quickstart.mapper")
 public class Application {
 
@@ -101,3 +104,18 @@ User(id=2, name=Jack, age=20, email=test2@baomidou.com)
 User(id=3, name=Tom, age=28, email=test3@baomidou.com)
 User(id=4, name=Sandy, age=21, email=test4@baomidou.com)
 User(id=5, name=Billie, age=24, email=test5@baomidou.com)
+
+
+# 常用注解
+## @TableName
+
+- 描述：表名注解，标识实体类对应的表
+- 使用位置：实体类
+-@TableName("sys_user")
+public class User {
+    private Long id;
+    private String name;
+    private Integer age;
+    private String email;
+}
+![[截屏2025-12-18 下午4.44.13.png]]

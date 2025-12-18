@@ -65,7 +65,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -190,12 +190,12 @@
               "title": "MyBatis-Plus 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +211,10 @@
   "active": "361f7da722e553d7",
   "lastOpenFiles": [
     "Lombok学习笔记.md",
-    "欢迎.md",
-    "MyBatis-Plus.md"
+    "截屏2025-12-18 下午4.42.08.png",
+    "截屏2025-12-18 下午4.45.20.png",
+    "截屏2025-12-18 下午4.44.13.png",
+    "MyBatis-Plus.md",
+    "欢迎.md"
   ]
 }
