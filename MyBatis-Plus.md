@@ -108,7 +108,7 @@ User(id=5, name=Billie, age=24, email=test5@baomidou.com)
 
 # 常用注解
 ## @TableName
-
+表名注解，标识实体类对应的表，**实体类的类名（转成小写后）和数据库表名相同时**，可以不指定该注解。
 - 描述：表名注解，标识实体类对应的表
 - 使用位置：实体类
 -@TableName("sys_user")
@@ -118,4 +118,57 @@ public class User {
     private Integer age;
     private String email;
 }
-![[截屏2025-12-18 下午4.44.13.png]]
+关于tablename中属性的说明后面补说明
+
+## @TableId
+
+- 描述：主键注解
+- 使用位置：实体类主键字段
+- @TableName("sys_user")
+public class User {
+    @TableId
+    private Long id;
+    private String name;
+    private Integer age;
+    private String email;
+}
+
+## @TableField
+
+描述：字段注解（非主键
+@TableName("sys_user")
+public class User {
+    @TableId
+    private Long id;
+    @TableField("nickname")
+    private String name;
+    private Integer age;
+    private String email;
+}
+
+## @Version
+
+- 描述：乐观锁注解、标记 ​`@Verison`​ 在字段上
+## @EnumValue
+
+- 描述：普通枚举类注解(注解在枚举字段上)
+-
+# - .CRUD 接口
+mp封装了一些最基础的CRUD方法，只需要直接继承mp提供的接口，无需编写任何SQL，即可食用。mp提供了两套接口，分别是`Mapper CRUD`接口和`Service CRUD`接口。并且mp还提供了条件构造器`Wrapper`，可以方便地组装SQL语句中的WHERE条件。
+
+  ##  Service CRUD 接口
+  通用 Service CRUD 封装IService接口，进一步封装 CRUD 采用 `get 查询单行` `remove 删除` `list 查询集合` `page 分页`
+  
+  首先，新建一个接口，继承`IService`
+  public interface UserService extends IService<User> {
+}
+​创建这个接口的实现类，并继承`ServiceImpl`
+@Slf4j
+@Service
+public class UserServiceImpl extends ServiceImpl<UserDAO, User> implements UserService {
+​
+}
+
+
+最后使用`userSerive`就可以调用相关方法:userService.
+
