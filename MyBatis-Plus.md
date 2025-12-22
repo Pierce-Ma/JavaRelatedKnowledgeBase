@@ -24,11 +24,11 @@ CREATE TABLE `user`
 DELETE FROM `user`;
 
 INSERT INTO `user` (id, name, age, email) VALUES
-(1, 'Jone', 18, 'test1@baomidou.com'),
-(2, 'Jack', 20, 'test2@baomidou.com'),
-(3, 'Tom', 28, 'test3@baomidou.com'),
-(4, 'Sandy', 21, 'test4@baomidou.com'),
-(5, 'Billie', 24, 'test5@baomidou.com');
+(1, 'Jone', 18,'test1@baomidou" ),
+(2, 'Jack', 20, 'test2@baomidou),
+(3, 'Tom', 28, 'test3@baomidou),
+(4, 'Sandy', 21, 'test4@baomidou),
+(5, 'Billie', 24, 'test5@baomidou.);
 
 **接下来先引入依赖，如果是Maven类型的（大部分现在都是Maven）**
 <dependency>
